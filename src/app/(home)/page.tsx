@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div>test</div>;
+  const onClick = () => {
+    console.log("test");
+  };
+
+  return <div onClick={onClick}>test</div>;
 }

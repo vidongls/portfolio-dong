@@ -6,6 +6,7 @@
   --secondary: #414141;
   --stroke: #666666;
   --logo: #75a172;
+  --font-sans: "Inter Tight", "Inter Tight Fallback", system-ui, sans-serif;
 }
 
 @theme inline {
@@ -47,4 +48,17 @@ body {
 
 @utility container {
   margin-inline: auto;
+  max-width: 1200px;
+}
+
+@utility flat-btn {
+  @apply relative transition-all duration-500 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-0.5 before:w-4/5 before:bg-[#969696] after:absolute after:-bottom-1 after:left-0 after:z-[1] after:h-0.5 after:w-2/5 after:bg-[#242126] after:transition-all after:duration-500 after:ease-in-out hover:after:w-4/5;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+@utility flat-link {
+  @apply before:bg-primary relative transition-all duration-500 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-0.5 before:w-0 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full;
 }

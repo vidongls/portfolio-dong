@@ -63,7 +63,7 @@ export const useLogoAnimation = (
     mainTl.to(logoRef.current, {
       opacity: 1,
       scale: 1,
-      duration: 0.3,
+      duration: 0.2,
       ease: "power2.out",
     });
 
@@ -73,7 +73,7 @@ export const useLogoAnimation = (
         char,
         {
           strokeDashoffset: 0,
-          duration: 0.4, // Nhanh hơn
+          duration: 0.3, // Nhanh hơn
           ease: "power1.inOut",
         },
         i === 0 ? ">" : "-=0.25", // Overlap nhiều hơn
@@ -89,7 +89,7 @@ export const useLogoAnimation = (
         char,
         {
           strokeDashoffset: 0,
-          duration: 0.4, // Nhanh hơn
+          duration: 0.3, // Nhanh hơn
           ease: "power1.inOut",
         },
         i === 0 ? ">" : "-=0.25", // Overlap nhiều hơn

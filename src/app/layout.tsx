@@ -20,12 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${InterTight.variable} antialiased`}>
-        <ConfigProvider>
+    <ConfigProvider>
+      <html lang="en" id="smooth-wrapper">
+        <body
+          className={`${InterTight.variable} antialiased`}
+          id="smooth-content"
+        >
           <LayoutProvider>{children}</LayoutProvider>
-        </ConfigProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ConfigProvider>
   );
 }

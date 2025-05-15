@@ -16,6 +16,21 @@
   --color-stroke: var(--stroke);
   --color-logo: var(--logo);
   --font-sans: var(--font-inter-tight);
+
+  /*------------- Custom Colors ------------- */
+
+  /*  Dell Colors */
+  --color-dell-50: #fcffe0;
+  --color-dell-100: #f6ffbb;
+  --color-dell-200: #eaff80;
+  --color-dell-300: #d7ff37;
+  --color-dell-400: #c2ff00;
+  --color-dell-500: #a1ff00;
+  --color-dell-600: #7bd300;
+  --color-dell-700: #5d9f00;
+  --color-dell-800: #4a7b00;
+  --color-dell-900: #3c6300;
+  --color-dell-950: #1e3b00;
 }
 
 @media (prefers-color-scheme: dark) {

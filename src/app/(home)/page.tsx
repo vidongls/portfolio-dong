@@ -1,7 +1,9 @@
-export default function Home() {
-  const onClick = () => {
-    console.log("test");
-  };
+import { HeroSection } from "./_components/hero";
 
-  return <div onClick={onClick}>test</div>;
+export default function Home() {
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 }

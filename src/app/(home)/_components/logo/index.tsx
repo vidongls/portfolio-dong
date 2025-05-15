@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "@/lib/gsap";
 
 import { createWaterSplash } from "./effects/waterEffect";
 import { createLeaf } from "./effects/leafEffect";
@@ -13,7 +11,7 @@ export const Logo: React.FC<React.SVGProps<SVGSVGElement>> = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const [particles, setParticles] = useState<HTMLDivElement[]>([]);
-  const [leaves, setLeaves] = useState<HTMLDivElement[]>([]);
+  const [leaves] = useState<HTMLDivElement[]>([]);
 
   // Tạo các particle cho hiệu ứng
   useEffect(() => {

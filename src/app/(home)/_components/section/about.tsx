@@ -12,10 +12,10 @@ export const AboutSection = () => {
     >
       <div className='space-y-32'>
         <p className='text-cod-gray-950 text-3xl leading-12 font-medium'>
-          Hi, I'm Dong. My objective is to become a skilled developer proficient
-          in both client-side and server-side JavaScript. In the short term, I
-          aim to enhance my skills and gain valuable experience within my
-          current company.
+          Hi, I&apos;m Dong. My objective is to become a skilled developer
+          proficient in both client-side and server-side JavaScript. In the
+          short term, I aim to enhance my skills and gain valuable experience
+          within my current company.
         </p>
         <ul className='flex gap-12'>
           <li className='text-secondary text-base leading-6 font-medium'>

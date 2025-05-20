@@ -31,6 +31,32 @@
   --color-dell-800: #4a7b00;
   --color-dell-900: #3c6300;
   --color-dell-950: #1e3b00;
+
+  /*  Chathams Blue Colors */
+  --color-chathams-blue-50: #eff9ff;
+  --color-chathams-blue-100: #def3ff;
+  --color-chathams-blue-200: #b5eaff;
+  --color-chathams-blue-300: #74daff;
+  --color-chathams-blue-400: #2ac9ff;
+  --color-chathams-blue-500: #00b3f9;
+  --color-chathams-blue-600: #0090d6;
+  --color-chathams-blue-700: #0071ad;
+  --color-chathams-blue-800: #00608e;
+  --color-chathams-blue-900: #05547c;
+  --color-chathams-blue-950: #03324e;
+
+  /*  Cod Gray Colors */
+  --color-cod-gray-50: #f6f6f6;
+  --color-cod-gray-100: #e7e7e7;
+  --color-cod-gray-200: #d1d1d1;
+  --color-cod-gray-300: #b0b0b0;
+  --color-cod-gray-400: #888888;
+  --color-cod-gray-500: #6d6d6d;
+  --color-cod-gray-600: #5d5d5d;
+  --color-cod-gray-700: #4f4f4f;
+  --color-cod-gray-800: #454545;
+  --color-cod-gray-900: #3d3d3d;
+  --color-cod-gray-950: #0a0a0a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,6 +96,10 @@ body {
 
 @utility flat-btn {
   @apply relative transition-all duration-500 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-0.5 before:w-4/5 before:bg-[#969696] after:absolute after:-bottom-1 after:left-0 after:z-[1] after:h-0.5 after:w-2/5 after:bg-[#242126] after:transition-all after:duration-500 after:ease-in-out hover:after:w-4/5;
+}
+
+@utility flat-btn-full {
+  @apply relative transition-all duration-500 ease-in-out before:absolute before:-bottom-1 before:left-0 before:h-0.5 before:w-full before:bg-[#969696] after:absolute after:-bottom-1 after:left-0 after:z-[1] after:h-0.5 after:w-2/5 after:bg-[#242126] after:transition-all after:duration-500 after:ease-in-out hover:after:w-full;
 }
 
 button {
